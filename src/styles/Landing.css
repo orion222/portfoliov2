@@ -1,58 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Chango&family=Libre+Barcode+39&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Bowlby+One&family=Chango&family=Work+Sans:wght@600&display=swap');
 
 :root{
     /* #26211D */
     --background: #26211D;
-    --spacing: minmax(200px, 1fr);
-
+    --jade: #A4AC86;
 }
 .container {
-    width: 100vw;
-    height: 100vh;
     background-color: var(--background);
-    position: relative;
+    height: 100vh;
 }
 
-.heading {
-    display: flex;
-    justify-content: flex-end;
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .nav {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.nav-item {
+    font-size: 10rem;
     display: flex;
-    padding: 1rem 2rem;
-    gap: 2rem;
-    right: 5px;
-    margin-left: auto;
+    justify-content: center;
+    perspective: 2em;
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    animation: blur-in 4s;
 }
 
-.navitem {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    padding: 0 1rem;
-    font-family: "Bakbak One", sans-serif;
-    text-decoration: underline solid transparent;
+.nav-link{
+    color: var(--jade);
+    font-family: "Bowlby One", sans-serif;
     transition: 500ms ease;
+    text-decoration: none;
+    transform: rotateY(-10deg) rotateX(-5deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
-.navitem:hover{
-    text-decoration: underline;
+.nav-link:hover{
+    transform: rotateY(5deg);
+    transform-origin: right;
+    color: #26211D;
+}
+
+
+@keyframes appear-up {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .hero {
     font-size: 5rem;
-    margin-top: 2em;
+    color: white;
+    font-family: "Chango", sans-serif;
+    animation: appear-up 5s;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    font-family: "Chango", sans-serif;
-    animation: fade-in 5s;
 }
-@keyframes fade-in{
-    from {opacity: 0;}
-    to {opacity: 1;}
+
+.card {
+    background-color: var(--jade);
+    border-radius: 1rem;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-image{
+    background-image: url("../images/orionwithtcard.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+    width: 50%;
+    border-radius: 50%;
+    border: solid 2px black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-top: 0.5em;
+    padding: 1.5em 0em;
+}
+
+.card-text { 
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.25em;
+    padding: 1em 2em 3em;
+    color: black;
+}
+
+.last-name {
+    position: absolute;
+    writing-mode: vertical-lr;
+    left: 100%;
+}
+@keyframes blur-in{
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.25;
+        filter: blur(0.1rem);
+    }
+
+    75% {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 .subtitle {
     font-size: 0.25em;
