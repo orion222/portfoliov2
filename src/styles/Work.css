@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Bowlby+One&family=Chango&family=Work+Sans:wght@600&display=swap');
+
+:root{
+    /* #26211D */
+    --background: #26211D;
+    --jade: #A4AC86;
+}
+.container {
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prism-container{
+    width:75%;
+    height: 65%;
+    background-color: red;
+    transform-style: preserve-3d;
+    transition: 1000ms ease;
+    perspective: 1000px;
+    position: absolute;
+}
+
+.prism-face{
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid black 1px;
+    
+}
+#up{
+    transform: translateZ(250);
+
+}
+#down {
+    transform: rotateX(-90deg) translateZ(50);
+}

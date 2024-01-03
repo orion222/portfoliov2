@@ -70,17 +70,28 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .card {
-    background-color: var(--jade);
-    border-radius: 1rem;
-    max-width: 50%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+}
+.card-front{
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    background-color: var(--jade);
+}
+
+.card-back{
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    background-color: white;
+    transform: rotateY(180deg);
 }
 
 .card-image{
