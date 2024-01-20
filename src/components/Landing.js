@@ -6,25 +6,15 @@ export default function Landing(){
     return (
         <div className="container">
             <div className="menu">
-                <div className="hero">
-                    ORION
-                    <div className="card">
-                        <div className="card-image">
-                        </div>
-                        <div className="card-text">
-                            Hi, I’m Orion.
-                            <br></br><br></br>
-                            I enjoy building front-end designs
-                            and solving coding problems.
-                            <br></br><br></br>
-                            I am currently at University of 
-                            Toronto studying Computer Science.
-                        </div>
-                        <div className="last-name">
-                            CHEN
-                        </div>
-                    </div>
-                    
+                
+                <div className="card">
+                   <div className="name">Orion Chen.</div>
+                   <div className="subtitle">UOFT Computer Science and Web Dev</div>
+                   <div className="scroller">
+                      <div className="card-image"></div>
+                   </div>
+                   <div className="arrow"></div>
+                   
                 </div>
                 <div className="nav">
                     <div className="nav-item">
