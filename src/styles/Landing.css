@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Bowlby+One&family=Chango&family=Work+Sans:wght@600&display=swap');
 
 :root{
-    /* #26211D */
+    /* #A4AC86 */
     --background: #26211D;
+    --yellow: #E2F89C;
+    
     --jade: #A4AC86;
 }
+
 .container {
     background-color: var(--background);
     height: 100vh;
@@ -13,16 +16,18 @@
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 100%;
 }
 .nav {
     grid-column-start: 2;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .nav-item {
-    font-size: 10rem;
     display: flex;
+    font-size: clamp(10px, 9vw, 10rem);
     justify-content: center;
     perspective: 2em;
     transform-origin: right center;
@@ -31,7 +36,7 @@
 }
 
 .nav-link{
-    color: var(--jade);
+    color: var(--yellow);
     font-family: "Bowlby One", sans-serif;
     transition: 500ms ease;
     text-decoration: none;
@@ -61,24 +66,19 @@
     }
 }
 
-.hero {
-    font-size: 5rem;
-    color: white;
-    font-family: "Chango", sans-serif;
-    animation: appear-up 5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 
 .card {
-    max-width: 60%;
+    height: 75vh;
+    width: 80%;
+    animation: appear-up 5s;
+    justify-self: end;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    background-color: var(--jade);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
     position: relative;
 }
 .card-front{
@@ -96,16 +96,24 @@
 
 .card-image{
     background-image: url("../images/orionwithtcard.jpeg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: blue;
-    width: 50%;
-    border-radius: 50%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
     border: solid 2px black;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     margin-top: 0.5em;
     padding: 1.5em 0em;
+}
+.scroller{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card-text { 
@@ -115,10 +123,22 @@
     color: black;
 }
 
-.last-name {
-    position: absolute;
-    writing-mode: vertical-lr;
-    left: 100%;
+.name {
+    font-family:"Bak Bak One", sans-serif;
+    font-size: 4vw;
+    font-weight: 900;
+    justify-self: end;
+    
+}
+
+.arrow{
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 0 right 0;
+    height: 45px;
+    width: 100%;
+
 }
 @keyframes blur-in{
     0% {
@@ -139,7 +159,6 @@
     }
 }
 .subtitle {
-    font-size: 0.25em;
-    color: white;
+    font-size: 3vmin;
     font-family: "Baloo Bhai 2", sans-serif;
 }
