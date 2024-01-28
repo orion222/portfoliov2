@@ -1,24 +1,29 @@
 import "../styles/Landing.css";
 import Arrow from "./Arrow";
+import Scroller from "./Scroller"
 
+import { useState } from 'react'
 export default function Landing() {
-    window.addEventListener("DOMContentLoaded", (event) => {
-        const element = document.getElementById("arrow");
-        element.addEventListener("click",function(){
-            console.log("hi");
-        });
-    });
+
+  const [page, setPage] = useState(0);
+  
+  function handleClick(){
+    console.log("hi");
+    setPage((page + 1) % 3);
+  }
+
+
   return (
     <div className="container">
       <div className="menu">
         <div className="card">
           <div className="name">Orion Chen.</div>
           <div className="subtitle">UOFT Computer Science and Web Dev</div>
-          <div className="scroller">
-            <div className="card-image"></div>
-          </div>
+          <Scroller page = {page}/>
           <div>
-            <Arrow/>
+            <div onClick = {handleClick} style={{display: "flex", float: "right"}}>
+              <Arrow/>
+            </div>
           </div>
         </div>
         <div className="nav">

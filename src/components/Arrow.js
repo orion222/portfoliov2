@@ -1,7 +1,7 @@
-import {React, useState } from "react";
+import { useState } from "react";
 
 
-export default function Arrow() {
+export default function Arrow(props) {
 
     const [color, setColor] = useState("#000000")
 
@@ -11,10 +11,9 @@ export default function Arrow() {
         id = "arrow"
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="10%"
+        width= "5em"
         viewBox="0 0 1280.000000 640.000000"
         preserveAspectRatio="xMidYMid meet"
-        style={{ float: "right"}}
         onMouseEnter = {() => setColor("#FFFFFF")}
         onMouseLeave = {() => setColor("#000000")}
       >
