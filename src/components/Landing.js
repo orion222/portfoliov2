@@ -3,8 +3,9 @@ import Arrow from "./Arrow";
 import Scroller from "./Scroller"
 
 import { useState } from 'react'
-export default function Landing() {
 
+export default function Landing() {
+  const links = ["WORK", "NOTES", "OTHER"]
   const [page, setPage] = useState(0);
   
   function handleClick(){
@@ -12,6 +13,17 @@ export default function Landing() {
     setPage((page + 1) % 3);
   }
 
+  function displayLinks(){
+    let ret = []
+    for (let i = 0; i < 3; i++){
+      ret.push(<div className="nav-item noselect">
+        <a href="/projects" className="nav-link">
+          {links[i]}
+        </a>
+      </div>);
+    }
+    return ret;
+  }
 
   return (
     <div className="container">
@@ -27,21 +39,7 @@ export default function Landing() {
           </div>
         </div>
         <div className="nav">
-          <div className="nav-item">
-            <a href="/projects" className="nav-link">
-              WORK
-            </a>
-          </div>
-          <div className="nav-item">
-            <a href="/blog" className="nav-link">
-              NOTES
-            </a>
-          </div>
-          <div className="nav-item">
-            <a href="/other" className="nav-link">
-              OTHER
-            </a>
-          </div>
+          {displayLinks()}
         </div>
       </div>
     </div>
