@@ -1,0 +1,55 @@
+
+a { color:black } /* Globally */
+
+a:visited { text-decoration: none; }
+a:focus { text-decoration: none;  }
+i:hover, i.active { text-decoration: none; color:white }
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.my-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    width: 30%;
+    height: 30%;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+.card-image{
+    background-image: url("../images/orionwithtcard.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--jade);
+    object-fit: cover;
+    width: 70%;
+    height: 100%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.scroller{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text { 
+    font-family: "Work Sans", sans-serif;
+    font-size: 2.5vmin;
+    padding: 1em 2em 3em;
+    color: black;
+    background-color: white;
+}
+
+i {
+    font-size: 5vmin;
+}

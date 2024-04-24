@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Bowlby+One&family=Chango&family=Work+Sans:wght@600&display=swap');
+
+:root{
+    /* #26211D */
+    --background: #26211D;
+    --jade: #A4AC86;
+}
+.container {
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-menu {
+    height: 80%;
+    width: 75%;
+    background-color: white;
+    display: flex;
+}
+
+.projects{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.project{
+    border: solid white;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-family: 'Courier New', monospace;
+}
+.project:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}

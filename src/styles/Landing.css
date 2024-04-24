@@ -3,8 +3,7 @@
 :root{
     /* #A4AC86 */
     --background: #26211D;
-    --yellow: #E2F89C;
-    
+    --yellow: #DFFF78;
     --jade: #A4AC86;
 }
 
@@ -17,11 +16,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    width: 90%;
 }
 .nav {
     grid-column-start: 2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
 }
 
@@ -81,35 +82,19 @@
     padding: 1rem 3rem;
     position: relative;
 }
-
-.card-image{
-    background-image: url("../images/orionwithtcard.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: blue;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border: solid 2px black;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    margin-top: 0.5em;
-    padding: 1.5em 0em;
-}
-.scroller{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.card-front{
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    background-color: var(--jade);
 }
 
-.card-text { 
-    font-family: "Work Sans", sans-serif;
-    font-size: 0.25em;
-    padding: 1em 2em 3em;
-    color: black;
+.card-back{
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    background-color: white;
+    transform: rotateY(180deg);
 }
+
 
 .name {
     font-family:"Bak Bak One", sans-serif;
@@ -150,3 +135,12 @@
     font-size: 3vmin;
     font-family: "Baloo Bhai 2", sans-serif;
 }
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
