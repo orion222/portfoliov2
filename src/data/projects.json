@@ -1,0 +1,16 @@
+{
+    "PROJECTS": {
+      "names": ["OMORI", "Undertale", "Stacker", "Bookshelf", "DMOJ / Leetcode"],
+      "pages": [
+        {
+          "slides": [
+            "https://picsum.photos/seed/1/200/300",
+            "https://picsum.photos/seed/2/200/300",
+            "https://picsum.photos/seed/3/200/300",
+            "https://picsum.photos/seed/4/200/300"
+          ]
+        }
+      ]
+    }
+  }
+  

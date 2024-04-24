@@ -1,10 +1,19 @@
 import "../styles/Work.css"
-import PROJECTS from "../data/projects.js"
-import { useRef, useEffect } from 'react';
-
+import { PROJECTS } from "../data/projects.json"
+import Project from "./Project.js"
+import { useRef, useState } from 'react';
 
 export default function Work(){
 
+    const [page, setPage] = useState(0);
+    let proj = [];
+    for (let i = 0; i < PROJECTS.pages.length; i++){
+        proj.push(<Project data = {PROJECTS} idx = {i}/>);
+    }
+
+    function displayPage(){
+        return proj[page];
+    }
     return (
         <div className = "container">
             <div className="work-menu">
@@ -17,12 +26,10 @@ export default function Work(){
                         })
                     }
                 </div>
-                <div className="page">
-
-                </div>
+                {
+                    displayPage()
+                }
             </div>
-
-           
         </div>
     )
 }
