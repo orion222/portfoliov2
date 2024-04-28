@@ -1,16 +1,67 @@
-{
-    "PROJECTS": {
-      "names": ["OMORI", "Undertale", "Stacker", "Bookshelf", "DMOJ / Leetcode"],
-      "pages": [
-        {
-          "slides": [
-            "https://picsum.photos/seed/1/200/300",
-            "https://picsum.photos/seed/2/200/300",
-            "https://picsum.photos/seed/3/200/300",
-            "https://picsum.photos/seed/4/200/300"
-          ]
-        }
-      ]
-    }
+[
+  {
+    "name": "OMORI",
+    "slides": [
+      "images/OMORI_1.png",
+      "images/OMORI_2.png",
+      "images/OMORI_3.png",
+      "images/OMORI_4.png",
+      "images/OMORI_5.png",
+      "images/OMORI_6.png"
+    ],
+    "time": "2023",
+    "tech": "Java 8, AWT Graphics",
+    "overview": "A budget remake of the popular RPG game OMORI made by Orion Chen and Nicky Lam. This game is a 2D adventure game where you must explore your surroundings to proceed in the story. You will be controlling a character who is named SUNNY located in WHITESPACE and need to find a way to start the game. Once you begin the game, you are now a delusion of SUNNY named OMORI. Hover the lightbulb in the main menu for an easter egg. \n\nDedicated to Ms. Wong.",
+    "links": "https://github.com/Coders222/omori---ics4u"
+  },
+  {
+    "name": "UNDERTALE",
+    "slides": [
+      "https://picsum.photos/seed/1/600/400",
+      "https://picsum.photos/seed/2/600/400",
+      "https://picsum.photos/seed/3/600/400",
+      "https://picsum.photos/seed/4/600/400"
+    ],
+    "time": "n/a",
+    "tech": "java"
+
+  },
+  {
+    "name": "Stacker",
+    "slides": [
+      "https://picsum.photos/seed/1/600/400",
+      "https://picsum.photos/seed/2/600/400",
+      "https://picsum.photos/seed/3/600/400",
+      "https://picsum.photos/seed/4/600/400"
+    ],
+    "time": "n/a",
+    "tech": "java"
+
+  },
+  {
+    "name": "Bookshelf",
+    "slides": [
+      "https://picsum.photos/seed/1/600/400",
+      "https://picsum.photos/seed/2/600/400",
+      "https://picsum.photos/seed/3/600/400",
+      "https://picsum.photos/seed/4/600/400"
+    ],
+    "time": "n/a",
+    "tech": "java"
+
+  },
+  {
+    "name": "DMOJ / Leetcode",
+    "slides": [
+          "https://picsum.photos/seed/1/600/400",
+          "https://picsum.photos/seed/2/600/400",
+          "https://picsum.photos/seed/3/600/400",
+          "https://picsum.photos/seed/4/600/400"
+    ],
+    "time": "n/a",
+    "tech": "java"
+
   }
+
+]
   
