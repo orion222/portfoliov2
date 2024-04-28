@@ -1,27 +1,26 @@
 import "../styles/Project.css";
 import { Carousel } from "./Carousel.js"
 export default function Project(props){
-
     return <div>
         <section>
-            <div className="header-label">PROJECT: {props.data.project}</div>
+            <div className="header-label">PROJECT: {props.data.name}</div>
             <div className="header-label">TIME: {props.data.time}</div>
             <div className="header-label">TECHNOLOGY: {props.data.tech}</div>
         </section>
-
-        <Carousel data = {props.data.pages[props.data.idx]}/>
-        <img className = "hero-image" src = {props.heroimg} alt = "Hero"></img>
+        <section className = "gallery">
+            <Carousel slides = {props.data.slides}/>
+        </section>
         
         <section>
-            Overview:
+            <div className="header-label">OVERVIEW:</div>
             <br></br>
-            {props.overview}
+            {props.data.overview}
         </section>
 
         <section>
-            Links:
+            <div className="header-label">LINKS:</div>
             <br></br>
-            {props.links}
+            <a href = {props.data.links}>Github</a>
         </section>
     </div>
 }
