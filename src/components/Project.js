@@ -8,7 +8,7 @@ export default function Project(props){
             <div className="header-label">TECHNOLOGY: {props.data.tech}</div>
         </section>
         <section className = "gallery">
-            <Carousel slides = {props.data.slides}/>
+            <Carousel page = {props.page} slides = {props.data.slides}/>
         </section>
         
         <section>

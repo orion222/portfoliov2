@@ -1,39 +1,28 @@
 import "../styles/Work.css"
 import PROJECTS from "../data/projects.json"
 import Project from "./Project.js"
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
 export default function Work(){
-    console.log(PROJECTS);
     const [page, setPage] = useState(0);
-    const proj = useMemo(() =>{
-        let t = []
-        for (let i = 0; i < PROJECTS.length; i++){
-            t.push(<Project data = {PROJECTS[i]} idx = {i}/>);
-        }
-        return t;
-    }, []);
-    
-
-    function displayPage(){
-        return proj[page];
+    function handlePageChange(newPage) {
+        setPage(newPage);
     }
+
     return (
         <div className = "container">
             <div className="work-menu">
                 <div className="projects">
                     {
                         PROJECTS.map((val, i) => {
-                            return <div className="project" key = {i} onClick = {() => setPage(i)}>
+                            return <div className="project" key = {i} onClick = {() => {console.log("clicked at " + i); handlePageChange(i)}}>
                                 {val.name}
                             </div>
                         })
                     }
                 </div>
                 <div className="page">
-                {
-                    displayPage()
-                }
+                    <Project page = {page} data = {PROJECTS[page]}/>
                 </div>
             </div>
         </div>
