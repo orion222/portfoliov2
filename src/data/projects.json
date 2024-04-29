@@ -17,15 +17,13 @@
   {
     "name": "UNDERTALE",
     "slides": [
-      "images/UNDERTALE_1.png",
-      "images/UNDERTALE_2.png",
-      "images/UNDERTALE_3.png",
-      "images/UNDERTALE_4.png",
-      "images/UNDERTALE_5.png"
+      "https://picsum.photos/seed/1/600/400",
+      "https://picsum.photos/seed/2/600/400",
+      "https://picsum.photos/seed/3/600/400",
+      "https://picsum.photos/seed/4/600/400"
     ],
     "time": "2022",
-    "tech": "Java 8, AWT Graphics",
-    "overview": "A budget remake of the popular RPG game UNDERTALE made by Orion Chen and Nicky Lam. Another 2D sandbox game similar where the storyline progresses as you continue to explore. There are a couple settings in the game that you walk through and a functional battle just like in UNDERTALE (though there are only 2 attacks). The running animation kind of laggy since this was our first time experimenting with render rates and animation. Fixing it would be a whole lot of tuning small details, so it'll just be left as is. The movement in the next game we built (OMORI) is a MUCH smoother implementation." 
+    "tech": "Java 8, AWT Graphics"
 
   },
   {
@@ -36,7 +34,7 @@
       "https://picsum.photos/seed/3/600/400",
       "https://picsum.photos/seed/4/600/400"
     ],
-    "time": "2021",
+    "time": "202",
     "tech": "Python"
 
   },
@@ -51,19 +49,6 @@
     "time": "n/a",
     "tech": "java"
 
-  },
-  {
-    "name": "DMOJ / Leetcode",
-    "slides": [
-          "https://picsum.photos/seed/1/600/400",
-          "https://picsum.photos/seed/2/600/400",
-          "https://picsum.photos/seed/3/600/400",
-          "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-
   }
-
 ]
   

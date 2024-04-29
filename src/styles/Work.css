@@ -5,7 +5,7 @@
     --background: #26211D;
     --jade: #A4AC86;
 }
-.container {
+.work-container {
     background-color: var(--background);
     height: 100vh;
     display: flex;
@@ -29,13 +29,17 @@
 
 
 .project{
-    border: solid white;
+    border: solid;
     text-align: center;
-    color: white;
     padding: 10px 0px;
     font-family: 'Courier New', monospace;
 }
-.project:hover{
+.project-inactive{
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+.project-active{
     color: black;
     background-color: white;
     border-color: black;
