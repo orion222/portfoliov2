@@ -13,7 +13,7 @@ export default function Scroller(props) {
                 target="blank"
                 href="https://www.linkedin.com/in/orion-chen-ab66872a1/"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i className ="fa-brands fa-linkedin"></i>
               </a>
             </div>
             <div className="link">
@@ -21,7 +21,7 @@ export default function Scroller(props) {
                 target="blank"
                 href="https://github.com/orion222"
               >
-                <i class="fa-brands fa-square-github"></i>
+                <i className ="fa-brands fa-square-github"></i>
               </a>
             </div>
             <div className="link">
@@ -29,7 +29,7 @@ export default function Scroller(props) {
                 target="blank"
                 href="mailto:orion.chen@hotmail.com"
               >
-                <i class="fa-solid fa-envelope"></i>
+                <i className ="fa-solid fa-envelope"></i>
               </a>
             </div>
           </div>
