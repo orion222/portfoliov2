@@ -28,7 +28,7 @@
 
 .nav-item {
     display: flex;
-    font-size: clamp(10px, 9vw, 10rem);
+    font-size: clamp(10px, 8vw, 10rem);
     justify-content: center;
     perspective: 2em;
     transform-origin: right center;

@@ -16,8 +16,8 @@ export default function Landing() {
   function displayLinks(){
     let ret = []
     for (let i = 0; i < 3; i++){
-      ret.push(<div className="nav-item noselect">
-        <a href="/projects" className="nav-link">
+      ret.push(<div className="nav-item noselect" key = {i}>
+        <a href={"/" + links[i].toLowerCase()} className="nav-link">
           {links[i]}
         </a>
       </div>);
