@@ -5,17 +5,14 @@ import { useState } from 'react';
 
 export default function Work(){
     const [page, setPage] = useState(0);
-    function handlePageChange(newPage) {
-        setPage(newPage);
-    }
 
     return (
-        <div className = "container">
+        <div className = "work-container">
             <div className="work-menu">
                 <div className="projects">
                     {
                         PROJECTS.map((val, i) => {
-                            return <div className="project" key = {i} onClick = {() => {console.log("clicked at " + i); handlePageChange(i)}}>
+                            return <div className={(i === page) ? "project project-active": "project project-inactive"} key = {i} onClick = {() => {setPage(i)}}>
                                 {val.name}
                             </div>
                         })

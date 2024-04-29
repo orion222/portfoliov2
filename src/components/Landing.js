@@ -30,7 +30,7 @@ export default function Landing() {
       <div className="menu">
         <div className="card">
           <div className="name">Orion Chen.</div>
-          <div className="subtitle">UOFT Computer Science and Web Dev</div>
+          <div className="subtitle">UOFT Computer Science</div>
           <Scroller page = {page}/>
           <div>
             <div onClick = {handleClick} style={{display: "flex", float: "right"}}>

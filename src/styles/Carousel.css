@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.slide-arrow:hover{
+    color: rgb(179, 176, 176);
+}
+
 .slide-arrow-left{
     left: 1rem;
 }
