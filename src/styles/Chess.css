@@ -52,6 +52,7 @@ iframe{
 
 .chess-header {
     -webkit-animation:Font 5s infinite alternate;
+    animation:Font 5s infinite alternate;
     color: #2dd4bf;
     -webkit-text-stroke: 0.5px black;
 }

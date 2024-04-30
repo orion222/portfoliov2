@@ -17,10 +17,11 @@
   {
     "name": "UNDERTALE",
     "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
+      "images/UNDERTALE_1.png",
+      "images/UNDERTALE_2.png",
+      "images/UNDERTALE_3.png",
+      "images/UNDERTALE_4.png",
+      "images/UNDERTALE_5.png"
     ],
     "time": "2022",
     "tech": "Java 8, AWT Graphics"
@@ -34,7 +35,7 @@
       "https://picsum.photos/seed/3/600/400",
       "https://picsum.photos/seed/4/600/400"
     ],
-    "time": "202",
+    "time": "2021",
     "tech": "Python"
 
   },

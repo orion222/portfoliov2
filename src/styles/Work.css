@@ -33,6 +33,7 @@
     text-align: center;
     padding: 10px 0px;
     font-family: 'Courier New', monospace;
+    cursor: pointer;
 }
 .project-inactive{
     color: white;

@@ -34,7 +34,7 @@
     perspective: 2em;
     transform-origin: right center;
     transform-style: preserve-3d;
-    animation: blur-in 4s;
+    
 }
 
 .nav-link{
@@ -68,11 +68,14 @@
     }
 }
 
+.appear {
+    animation: appear-up 5s;
+}
+
 
 .card {
     height: 75vh;
     width: 80%;
-    animation: appear-up 5s;
     justify-self: end;
     margin-top: auto;
     margin-bottom: auto;
@@ -131,6 +134,10 @@
         opacity: 1;
         filter: blur(0);
     }
+}
+
+.blurred {
+    animation: blur-in 4s;
 }
 .subtitle {
     font-size: 3vmin;

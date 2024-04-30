@@ -16,7 +16,7 @@ export default function Landing() {
   function displayLinks(){
     let ret = []
     for (let i = 0; i < 3; i++){
-      ret.push(<div className="nav-item noselect" key = {i}>
+      ret.push(<div className="nav-item noselect blurred" key = {i}>
         <a href={"/" + links[i].toLowerCase()} className="nav-link">
           {links[i]}
         </a>
@@ -28,7 +28,7 @@ export default function Landing() {
   return (
     <div className="container">
       <div className="menu">
-        <div className="card">
+        <div className="card appear">
           <div className="name">Orion Chen.</div>
           <div className="subtitle">UOFT Computer Science</div>
           <Scroller page = {page}/>
