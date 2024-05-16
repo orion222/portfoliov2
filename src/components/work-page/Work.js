@@ -1,7 +1,7 @@
-import "../styles/Work.css"
-import PROJECTS from "../data/projects.json"
+import "../../styles/Work.css"
+import PROJECTS from "../../data/projects.json"
 import Project from "./Project.js"
-import Back from "./BackButton.js"
+import Back from "../general/BackButton.js"
 import { useState } from 'react';
 
 export default function Work(){

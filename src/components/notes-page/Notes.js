@@ -1,4 +1,4 @@
-import "../styles/Notes.css"
+import "../../styles/Notes.css"
 export default function Notes(){
 
 

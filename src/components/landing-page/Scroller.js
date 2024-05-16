@@ -1,4 +1,4 @@
-import "../styles/Scroller.css";
+import "../../styles/Scroller.css";
 
 export default function Scroller(props) {
   function display() {

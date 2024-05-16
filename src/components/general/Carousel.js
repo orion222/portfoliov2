@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Carousel.css"
+import "../../styles/Carousel.css"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
 export const Carousel = ({ slides, page }) => {
     const [slide, setSlide] = useState(0);

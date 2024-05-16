@@ -1,5 +1,5 @@
-import "../styles/Other.css"
-import Back from "./BackButton"
+import "../../styles/Other.css"
+import Back from "../general/BackButton"
 export default function Other(){
 
     return (

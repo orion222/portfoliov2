@@ -1,5 +1,5 @@
 .notes-container{
     height: 100vh;
     width: 100vw;
-    transition: all 5s ease-in-out;
+    background-color: #26211D;
 }

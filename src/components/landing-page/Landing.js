@@ -1,4 +1,4 @@
-import "../styles/Landing.css";
+import "../../styles/Landing.css";
 import Arrow from "./Arrow";
 import Scroller from "./Scroller"
 

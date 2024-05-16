@@ -1,5 +1,5 @@
-import "../styles/Project.css";
-import { Carousel } from "./Carousel.js"
+import "../../styles/Project.css";
+import { Carousel } from "../general/Carousel.js"
 export default function Project(props){
     return <div>
         <section>
