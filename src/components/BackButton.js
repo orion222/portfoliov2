@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function BackButton(props){
     const [hover, setHover] = useState(false)
     return <a href = {props.url}>
-        <div style={box} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+        <div className = {props.class} style={box} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <IoCaretBack style = {(hover) ? {...buttonStyles, color: "grey"}: buttonStyles}/>
             <p style={(hover) ? {...font, color: "grey"}: font}>Back?</p>
         </div>

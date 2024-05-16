@@ -2,6 +2,7 @@ import "../styles/Chess.css"
 import GAMES from "../data/chess.json";
 import { useState } from 'react';
 import { FaArrowAltCircleRight , FaArrowAltCircleLeft  } from "react-icons/fa";
+import Back from "./BackButton";
 
 export default function Chess(){
     const [game, setGame] = useState(0);
@@ -16,6 +17,7 @@ export default function Chess(){
 
     return (
         <div className = "main">
+            <Back url = "/Other"/>
             <h1 className = "chess-header">Brilliancies 👽</h1>
             <div className = "board">
                 <FaArrowAltCircleLeft onClick = {() => prevGame()} className = "chess-arrow chess-arrow-left"/>

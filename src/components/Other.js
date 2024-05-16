@@ -4,9 +4,9 @@ export default function Other(){
 
     return (
         <div className = "other-container">
-            <Back url = "/"/>
-            <h1 className = "other-header appear">Other</h1>
-            <ul className = "blurred">
+            <Back class = "blurred-fast" url = "/"/>
+            <h1 className = "other-header appear-fast">Other</h1>
+            <ul className = "blurred-fast">
                 <a href = "/other/chess">               
                     <li>
                         Chess

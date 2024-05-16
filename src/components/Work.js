@@ -9,7 +9,7 @@ export default function Work(){
 
     return (
         <div className = "">
-            <Back url = "/"/>
+            <Back class = "blurred" url = "/"/>
             <div className = "work-container">
                 <div className="work-menu appear">
                     <div className="projects">

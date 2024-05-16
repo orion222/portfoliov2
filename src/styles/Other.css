@@ -32,5 +32,10 @@ li{
 li:hover{
     color: yellow;
 }
+.appear-fast{
+    animation: appear-up 3s;
+}
 
-
+.blurred-fast{
+    animation: blur-in 3s;
+}
