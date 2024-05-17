@@ -15,7 +15,7 @@ export default function Landing() {
 
   function displayLinks(){
     let ret = []
-    for (let i = 0; i < 3; i++){
+    for (let i = 0; i < links.length; i++){
       ret.push(<div className="nav-item noselect blurred" key = {i}>
         <a href={"/" + links[i].toLowerCase()} className="nav-link">
           {links[i]}

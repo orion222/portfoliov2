@@ -7,7 +7,7 @@
 
 .other-container {
     background-color: var(--background);
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem 10vw;
 }
 

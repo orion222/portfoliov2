@@ -1,10 +1,15 @@
 import "../../styles/Notes.css"
+import Slider from "./Slider"
 export default function Notes(){
 
 
     return (
         <div className = "notes-container">
-            yer
+            <div>
+                <Slider/>
+            </div>
+            
         </div>
+        
     )
 }
