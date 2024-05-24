@@ -1,62 +1,76 @@
 .notes-container{
     min-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
-    justify-content: center;
-    background-color: #26211D;
-}
-
-.slider-container {
-    max-width: 1100px;
-    width: 100%;
-}
-
-.slider-list {
-    display: grid;
-    gap:2px;
-    grid-template-columns: repeat(8, 1fr);
-    overflow-x: auto;
-}
-
-.slider-list::-webkit-scrollbar{
-    scrollbar-width: thin;
-    height: 0.25rem;
     position: relative;
-}
-::-webkit-scrollbar-thumb:horizontal:hover{
-    cursor: grab;
-}
-::-webkit-scrollbar-thumb:horizontal:hover ::-webkit-scrollbar{
-    height: 0.5rem;
-}
-::-webkit-scrollbar-thumb:horizontal:active{
-    cursor: grabbing;
-}
-.slider-list::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-.slider-list::-webkit-scrollbar-thumb {
-    background: white; 
-    border-radius: 10px;
-  }
-.blog-card img{
-    width: 200px;
-    height: 170px;
-    object-fit: cover;
-    -webkit-user-drag: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    -webkit-animation: backgroundTransition 2s;
+    animation: backgroundTransition 2s;
 }
 
-.blog-card{
+@keyframes backgroundTransition {
+    0% {background-color: #26211D}
+    20% {background-color: #26211D}
+    100% {background-color: white}
+}
+
+
+.text-panel{
+    width: 75%;
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+.gazette {
+    padding: 5px 10px;
+    border-right: dashed 3px black;
+    font-weight: 700;
+    font-size: 3vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gazette-p2 {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: 700;
+    margin: auto;
+    margin-left: 1vw;
     text-align: center;
-    color: white;
-    padding-bottom: 5px;
 }
 
-.blog-card:hover{
-    opacity: 0.5;
-    cursor: pointer;
+.overview-container{
+    display: flex;
+    width: 70%;
+    position: relative;
+    border: solid 1px black;
+    margin-bottom: 2rem;
+}
+
+.note-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    gap:2rem 0;
+    padding: 0 1rem;
+}
+
+.grid-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.note-title{
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: "Alfa Slab One", sans-serif;
+    overflow-wrap: break-word;
+}
+
+.article{
+    grid-column-start: 2;
 }
 

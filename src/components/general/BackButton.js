@@ -12,12 +12,13 @@ export default function BackButton(props){
 const buttonStyles = {
     width: "2rem",
     height: "2rem",
+    color: "#ced4da",
 }
 const box = {
     position: "absolute",
     left: "1rem",
     top: "1rem",
-    color: "white",
+    color: "#ced4da",
     display: "flex",
 }
 const font = {

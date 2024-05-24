@@ -9,7 +9,8 @@
         "title": "BLOG 2",
         "cover": "images/OMORI_2.png",
         "date" : "April 16, 2015",
-        "synopsis": "yar yar"
+        "synopsis": "yar yar",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales auctor quam, a commodo massa venenatis id. Praesent consequat dolor pretium rutrum vulputate. Aenean ac porta mi. Curabitur dapibus varius elit, et aliquam mi ornare at. Sed vehicula, nulla rutrum egestas efficitur, tellus ligula molestie augue, id ultrices ex ipsum eu nibh. Praesent viverra eget lacus at facilisis. Sed vestibulum sagittis magna, in tempus nulla. Morbi cursus, mauris quis facilisis fringilla, orci quam suscipit turpis, ut gravida magna erat nec libero. Duis a tempus purus. Maecenas in auctor mauris, nec sodales sapien. Nullam efficitur felis et dapibus pharetra."
     },
     {
         "title": "BLOG 3",
