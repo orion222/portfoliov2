@@ -1,8 +1,9 @@
 import "../../styles/Notes.css";
 import Slider from "./Slider";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import NOTES from "../../data/notes.json";
 import Back from "../general/BackButton";
+import parseArticle from "./parseArticle.js"
 
 function TextPanel() {
   return (
@@ -20,6 +21,7 @@ function TextPanel() {
 }
 
 function noteOverview(id) {
+
   return (
     <div className="overview-container">
       <div className="note-grid">
@@ -30,13 +32,16 @@ function noteOverview(id) {
         <h2>DATE</h2>
         <p className="grid-content">{NOTES[id].date}</p>
         <h2>PAPER</h2>
-        <div className="article grid-content">{NOTES[id].article}</div>
+        <div className="article grid-content">{parseArticle(NOTES[id].article)}</div>
       </div>
     </div>
   );
 }
+
+
 export default function Notes() {
   const [note, setNote] = useState(-1);
+  
   return (
     <div className="notes-container">
       <Back url="." />

@@ -6,9 +6,9 @@ export default function Other(){
         <div className = "other-container">
             <Back class = "blurred-fast" url = "/"/>
             <h1 className = "other-header appear-fast">Other</h1>
-            <ul className = "blurred-fast">
+            <ul className = "other-ul blurred-fast">
                 <a href = "/other/chess">               
-                    <li>
+                    <li className = "other-link">
                         Chess
                     </li>
                 </a>

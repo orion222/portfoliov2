@@ -20,7 +20,7 @@ export default function Project(props){
         <section>
             <div className="header-label">LINKS:</div>
             <br></br>
-            <a href = {props.data.links}>Github</a>
+            <a target = "_blank" href = {props.data.links}>Github</a>
         </section>
     </div>
 }
