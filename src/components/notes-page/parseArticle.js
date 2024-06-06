@@ -36,7 +36,7 @@ function getList(article, idx){
         }
         else if (c === '}'){
             items.push(<li key = {r}> {article.substring(l, r)} </li>);
-            return <ul style={{listStyleType: "circle"
+            return <ul style={{listStyleType: "circle", padding: "0 1rem"
             }}> {items} </ul>
         }
     }

@@ -44,8 +44,7 @@ export default function Scroller(props) {
         Hi, I'm Orion.
         <br></br>
         <br></br>I am an aspiring software developer with big ideas and always
-        looking for the next opportunity to learn. I have great experience with
-        React, Javascript, Java, Python, and C.
+        looking for the next opportunity to learn. Thanks for visiting!
       </div>
     );
   }

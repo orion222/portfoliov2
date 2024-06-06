@@ -10,12 +10,15 @@
 
 .container {
     background-color: var(--background);
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 90%;
 }
@@ -102,7 +105,7 @@
 
 .name {
     font-family:"Bak Bak One", sans-serif;
-    font-size: 4vw;
+    font-size: 5vmin;
     font-weight: 900;
     justify-self: end;
     
@@ -152,3 +155,30 @@
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+@media screen and (max-width: 1000px){
+    .arrow{
+        background-position: bottom 0 left 50%
+    }
+    .menu{
+        padding: 2rem 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        gap: 2rem;
+    }
+    .nav{
+        grid-column-start: 1;
+    }
+
+    .card{
+        height: 100%;
+        justify-self: center;
+    }
+    
+    .nav-item{
+        font-size: 15vmin;
+    } 
+    .name{
+        font-size: 7vmin;
+    }
+}

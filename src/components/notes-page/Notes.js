@@ -12,8 +12,6 @@ function TextPanel() {
         THE <br /> ORION <br /> GAZETTE
       </div>
       <div className="gazette-p2">
-        WELCOME
-        <br />
         Scroll through and click a cover to read what it's about
       </div>
     </div>
@@ -25,8 +23,9 @@ function noteOverview(id) {
   return (
     <div className="overview-container">
       <div className="note-grid">
-        <h1 className="note-title"> #{id < 10 ? "0" + id : id}</h1>
-        <h1 className="note-title grid-content"> {NOTES[id].title} </h1>
+        <h1 className="note-title grid-content note-id"> #{id < 10 ? "0" + id : id}</h1>
+        <h1 className = "note-title">{NOTES[id].title} </h1>
+        <span className = "titleandid"> #{id < 10 ? "0" + id : id} {NOTES[id].title} </span>
         <h2>SYNOPSIS</h2>
         <p className="synopsis-content grid-content"> {NOTES[id].synopsis} </p>
         <h2>DATE</h2>
