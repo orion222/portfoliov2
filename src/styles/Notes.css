@@ -89,12 +89,12 @@ h2{
 .titleandid{
     display: none;
 }
-
 @media screen and (max-width: 750px){
     
     .note-grid{
         width: 100%;
         grid-template-columns: 100%;
+        gap: 1rem;
     }
     .article{
         grid-column-start: 1;
