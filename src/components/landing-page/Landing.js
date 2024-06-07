@@ -28,7 +28,7 @@ export default function Landing() {
   return (
     <div className="container">
       <div className="menu">
-        <div className="card appear">
+        <div className="cardv2 appear">
           <div className="name">Orion Chen.</div>
           <div className="subtitle">UOFT Computer Science</div>
           <Scroller page = {page}/>

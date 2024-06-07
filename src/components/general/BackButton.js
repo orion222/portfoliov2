@@ -13,6 +13,7 @@ const buttonStyles = {
     width: "2rem",
     height: "2rem",
     color: "#ced4da",
+    padding: "0 0"
 }
 const box = {
     position: "absolute",

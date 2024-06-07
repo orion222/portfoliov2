@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+.w-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+}
+.work-scroll{
+    height: 80vh;
+    width: 40vw;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0 1rem 0 0;
+}
+.project-box{
+    padding: 0 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.project-name{
+    font-family: Notable, sans-serif;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font-size:8vmin;
+    color: white;
+
+}
+
+.project-date{
+    font-family: Lucida Sans, sans-serif;
+    font-size: 12px;
+    float: right;
+    color: white;
+}
+
+.project-box:hover .project-name{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: var(--background);
+}
+.project-box:hover{
+    border: 1px solid white;
+
+}
+
+.work-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d3d3d3 ; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.work-scroll::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+}
+.work-scroll::-webkit-scrollbar{
+    scrollbar-width: thin;
+    width: 0.25rem;
+    position: relative;
+}

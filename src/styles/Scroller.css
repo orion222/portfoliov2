@@ -1,5 +1,5 @@
 
-a { color:black } /* Globally */
+a { color:white } /* Globally */
 
 a:visited { text-decoration: none; }
 a:focus { text-decoration: none;  }
@@ -27,12 +27,12 @@ i:hover, i.active { text-decoration: none; color:white }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--jade);
     object-fit: cover;
     width: 70%;
     height: 100%;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    border-radius: 1rem;
 }
 .scroller{
     width: 100%;

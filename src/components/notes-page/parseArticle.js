@@ -9,7 +9,7 @@ export default function parseArticle(article) {
     let c = article.charAt(r);
     for (let i = 0; i < triggers.length; i++) {
       if (c === triggers[i][0]) {
-        out.push(<div>{article.substring(l, r)}</div>);
+        out.push(article.substring(l, r));
         out.push(funcs[i](article, r + 1));
 
         while (c !== triggers[i][1]) {
@@ -33,9 +33,11 @@ function getLink(article, idx){
         if (c === '>'){
             let link = article.substring(l, r);
             return (
+              <span>
                 <a target="_blank" href={link} className="article-link">
                 {link}
                 </a>
+              </span>
             );
         }
     }

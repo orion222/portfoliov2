@@ -4,7 +4,7 @@
         "cover": "images/OMORI_1.png",
         "date" : "May 26, 2005",
         "synopsis": "a small blog about who i am and what i do",
-        "article": "Welcome to my notes. \nMy name is Orion Chen, a second-year student in Computer Science that is trying to beat the tech unemployment wave in the near future. My current goals are to learn a variety of technologies that can build concrete projects like this. \n\nThe languages I've worked with include: {Python,Java,C,Javascript,HTML/CSS}You can see some things I worked on in the WORK tab. Other tools I have experience with include Git and Postman. I've experimented with a bunch of things, but until I'm fluent, I cannot confidently add them to the list. Writing notes probably never make it though.\n\nSee you later."
+        "article": "Welcome to my notes. \nMy name is Orion Chen, a second-year student in Computer Science that is trying to beat the tech unemployment wave in the near future. My current goals are to learn a variety of technologies that can build concrete projects like this. \n\nThe languages I've worked with include: <https://ty.ly> {Python,Java,C,Javascript,HTML/CSS}You can see some things I worked on in the WORK tab. Other tools I have experience with include Git and Postman. I've experimented with a bunch of things, but until I'm fluent, I cannot confidently add them to the list. Writing notes probably never make it though.\n\nSee you later."
     },
     {
         "title": "BLOG 2",

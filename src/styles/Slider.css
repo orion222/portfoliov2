@@ -45,7 +45,7 @@
     height: 140px;
     object-fit: cover;
     -webkit-user-drag: none;
-    border: 2px solid black;
+    border: 1px solid black;
 
 }
 

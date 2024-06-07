@@ -5,7 +5,7 @@ export default function Scroller(props) {
     if (props.page === 0) {
       return (
         <div className="hero">
-          <div className="card-image" />
+          <div className="card-image"/>
           <div className="my-links">
             <div className="link">
               <a

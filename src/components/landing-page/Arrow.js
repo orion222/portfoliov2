@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Arrow(props) {
 
-    const [color, setColor] = useState("#000000")
+    const [color, setColor] = useState("#FFFFFF")
 
 
   return (
@@ -14,8 +14,8 @@ export default function Arrow(props) {
         width= "5em"
         viewBox="0 0 1280.000000 640.000000"
         preserveAspectRatio="xMidYMid meet"
-        onMouseEnter = {() => setColor("#FFFFFF")}
-        onMouseLeave = {() => setColor("#000000")}
+        onMouseEnter = {() => setColor("#666")}
+        onMouseLeave = {() => setColor("#FFFFFF")}
       >
         <g
           transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
