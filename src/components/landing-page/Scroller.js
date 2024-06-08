@@ -44,7 +44,7 @@ export default function Scroller(props) {
         Hi, I'm Orion.
         <br></br>
         <br></br>I am an aspiring software developer with big ideas and always
-        looking for the next opportunity to learn. Thanks for visiting!
+        looking for the next opportunity to learn. <br/><br/>Thanks for visiting!
       </div>
     );
   }

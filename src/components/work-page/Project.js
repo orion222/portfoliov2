@@ -1,7 +1,7 @@
 import "../../styles/Project.css";
 import { Carousel } from "../general/Carousel.js"
 export default function Project(props){
-    return <div>
+    return <div className = "project-container">
         <section>
             <div className="header-label">PROJECT: {props.data.name}</div>
             <div className="header-label">TIME: {props.data.time}</div>

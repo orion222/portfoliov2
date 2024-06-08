@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
-
-.w-container{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--background);
-}
 .work-scroll{
     height: 80vh;
     width: 40vw;
@@ -15,8 +8,7 @@
     padding: 0 1rem 0 0;
 }
 .project-box{
-    padding: 0 1rem;
-    margin: 1rem;
+    padding: 1rem 1rem;
     cursor: pointer;
 }
 .project-name{
@@ -27,7 +19,12 @@
     font-weight: 400;
     font-size:8vmin;
     color: white;
+}
 
+.project-name-active{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: var(--background);
 }
 
 .project-date{
@@ -44,7 +41,9 @@
 }
 .project-box:hover{
     border: 1px solid white;
-
+}
+.project-box-active{
+    border: 1px solid white;
 }
 
 .work-scroll::-webkit-scrollbar-track {
@@ -61,4 +60,13 @@
     scrollbar-width: thin;
     width: 0.25rem;
     position: relative;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    cursor: grab;
+}
+::-webkit-scrollbar-thumb:vertical:hover ::-webkit-scrollbar{
+    height: 0.5rem;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    cursor: grabbing;
 }

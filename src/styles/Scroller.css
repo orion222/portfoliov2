@@ -3,7 +3,7 @@ a { color:white } /* Globally */
 
 a:visited { text-decoration: none; }
 a:focus { text-decoration: none;  }
-i:hover, i.active { text-decoration: none; color:white }
+i:hover, i.active { text-decoration: none; color: var(--jade) }
 .hero{
     display: flex;
     align-items: center;
