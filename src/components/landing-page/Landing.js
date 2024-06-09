@@ -1,6 +1,6 @@
 import "../../styles/Landing.css";
-import Arrow from "./Arrow";
-import Scroller from "./Scroller"
+import orion from "../../images/orionwithtcard.jpeg"
+
 
 import { useState } from 'react'
 
@@ -9,7 +9,6 @@ export default function Landing() {
   const [page, setPage] = useState(0);
   
   function handleClick(){
-    console.log("hi");
     setPage((page + 1) % 3);
   }
 
@@ -28,13 +27,39 @@ export default function Landing() {
   return (
     <div className="container">
       <div className="menu">
-        <div className="cardv2 appear">
+        <div className="card appear centered-column">
+            
           <div className="name">Orion Chen.</div>
           <div className="subtitle">UOFT Computer Science</div>
-          <Scroller page = {page}/>
-          <div>
-            <div onClick = {handleClick} style={{display: "flex", float: "right"}}>
-              <Arrow/>
+
+          <div className="hero">
+            <img src = {orion} className="card-image"/>
+            <div className="my-links">
+              <div className="link">
+                <a
+                  
+                  target="blank"
+                  href="https://www.linkedin.com/in/orion-chen-ab66872a1/"
+                >
+                  <i className ="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+              <div className="link">
+                <a
+                  target="blank"
+                  href="https://github.com/orion222"
+                >
+                  <i className ="fa-brands fa-square-github"></i>
+                </a>
+              </div>
+              <div className="link">
+                <a
+                  target="blank"
+                  href="mailto:orion.chen@hotmail.com"
+                >
+                  <i className ="fa-solid fa-envelope"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

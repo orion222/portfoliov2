@@ -1,11 +1,13 @@
 import "../../styles/Scroller.css";
-
+import orion from "../../images/orionwithtcard.jpeg"
 export default function Scroller(props) {
   function display() {
     if (props.page === 0) {
       return (
         <div className="hero">
-          <div className="card-image"/>
+          <div>
+          <img src = {orion} className="card-image"/>
+          </div>
           <div className="my-links">
             <div className="link">
               <a

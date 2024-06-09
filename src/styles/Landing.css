@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Baloo+Bhai+2&family=Bowlby+One&family=Chango&family=Work+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+
+a { color:white } /* Globally */
+
+a:visited { text-decoration: none; }
+a:focus { text-decoration: none;  }
+i:hover, i.active { text-decoration: none; color: var(--jade) }
+
 :root{
     /* #A4AC86 */
     --background: #26211D;
     --yellow: #DFFF78;
     --jade: #A4AC86;
-}
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -26,6 +28,8 @@ body, html {
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 90%;
 }
@@ -81,37 +85,48 @@ body, html {
 .appear {
     animation: appear-up 5s;
 }
+i {
+    font-size: 6vmin;
+}
 
-
-.card {
-    height: 75vh;
-    width: 80%;
-    justify-self: end;
-    margin-top: auto;
-    margin-bottom: auto;
+.my-links{
+    position: absolute;
+    right: -10vmin;
     display: flex;
     flex-direction: column;
-    background-color: var(--jade);
+}
+
+.link{
+    width: 30%;
+    height: 30%;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.card-image{
+    display: block;
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
     border-radius: 1rem;
-    padding: 1rem 3rem;
+}
+
+.centered-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.cardv2{
+.card{
     position: relative;
-
-}
-.card-front{
-    border-radius: 1rem;
-    backface-visibility: hidden;
-    background-color: var(--jade);
-}
-
-.card-back{
-    border-radius: 1rem;
-    backface-visibility: hidden;
-    background-color: white;
-    transform: rotateY(180deg);
+    height: 80%;
 }
 
 
@@ -123,15 +138,7 @@ body, html {
     
 }
 
-.arrow{
-    background-image: url("../images/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom 0 right 0;
-    height: 45px;
-    width: 100%;
 
-}
 @keyframes blur-in{
     0% {
         opacity: 0;
@@ -175,17 +182,15 @@ body, html {
         overflow-y: scroll;
         flex-direction: column;
     }
-    .arrow{
-        background-position: bottom 0 left 50%
-    }
     .menu{
         padding: 2rem 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 1fr;
+        grid-template-rows: auto auto;
         gap: 2rem;
     }
     .nav{
         grid-column-start: 1;
+        margin-top: 2rem;
     }
 
     .card{

@@ -7,11 +7,13 @@ i:hover, i.active { text-decoration: none; color: var(--jade) }
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 .my-links{
+    position: absolute;
+    right: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -23,15 +25,11 @@ i:hover, i.active { text-decoration: none; color: var(--jade) }
     margin-top: 2rem;
 }
 .card-image{
-    background-image: url("../images/orionwithtcard.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    width: 70%;
-    height: 100%;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    display: block;
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
     border-radius: 1rem;
 }
 .scroller{

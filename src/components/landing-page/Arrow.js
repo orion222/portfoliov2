@@ -3,9 +3,7 @@ import { useState } from "react";
 
 export default function Arrow(props) {
 
-    const [color, setColor] = useState("#FFFFFF")
-
-
+  const [color, setColor] = useState("#FFFFFF")
   return (
       <svg
         id = "arrow"

@@ -18,13 +18,18 @@ export default function Chess(){
     return (
         <div className = "main">
             <Back url = "/Other"/>
-            <h1 className = "chess-header">Brilliancies 👽</h1>
-            <div className = "board">
-                <FaArrowAltCircleLeft onClick = {() => prevGame()} className = "chess-arrow chess-arrow-left"/>
-                <FaArrowAltCircleRight  onClick = {() => nextGame()} className = "chess-arrow chess-arrow-right"/>
-                <iframe autoFcous title = {gameID} id= {gameID} allowtransparency="true" frameborder="0"  src={"//www.chess.com/emboard?id=" + gameID}>
+            <div className = "large-screen">
+                <h1 className = "chess-header">Brilliancies 👽</h1>
+                <div className = "board">
+                    <FaArrowAltCircleLeft onClick = {() => prevGame()} className = "chess-arrow chess-arrow-left"/>
+                    <FaArrowAltCircleRight  onClick = {() => nextGame()} className = "chess-arrow chess-arrow-right"/>
+                    <iframe autoFcous title = {gameID} id= {gameID} allowtransparency="true" frameborder="0"  src={"//www.chess.com/emboard?id=" + gameID}>
 
-                </iframe>
+                    </iframe>
+                </div>
+            </div>
+            <div className = "small-screen">
+                Page not supported for small screens
             </div>
         </div>
     );
