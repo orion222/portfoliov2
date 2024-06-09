@@ -11,37 +11,20 @@
         "cover": "images/OMORI_2.png",
         "date" : "June 8, 2024",
         "synopsis": "a talk about the development of this website",
-        "article": "After months of procrastinating and hours of searching how to center a div, this website is finally finished. I used React and vanilla CSS to create this design. My motive to create this portfolio was to give my previous one (which was really bad) a better aesthetic and minimalistic look. Design is one of the most important elements of software creation and is often a challenge to my creativity; thus, I usually hop on <https://www.awwwards.com/websites/sites_of_the_day|awwwards.com> to get some inspiration from professional studios. As much as I admire the art on there, front-end programming is a different type of debugging hell, so I'll stick to my basic divs and imgs. However, I think the website looks pretty fine for the most part. I spent a lot of time choosing colour schemes, page layout, font families, and more. My favourite page to make was the WORK tab, where I was proud of coming up with that layout. The WORK tab was actually redesigned into what it is now because over time I realized how ugly it looked in its early stages. Oh yeah, responsive design is also implemented so you can view this on your phone without it becoming a total mess. Anyway, this project was a fun learning experience. \n\nEverybody wanted to know what I would do if I [didn't finish this website].\n I guess we'll never know."
+        "article": "After months of procrastinating and hours of searching how to center a div, this website is finally finished. I used React and vanilla CSS to create this design. My motive to create this portfolio was to give my previous one (which was really bad) a better aesthetic and minimalistic look. Design is one of the most important elements of software creation and is often a challenge to my creativity; thus, I usually hop on <https://www.awwwards.com/websites/sites_of_the_day|awwwards.com> to get some inspiration from professional studios. As much as I admire the art on there, front-end programming is a different type of debugging hell, so I'll stick to my basic divs and imgs. However, I think the website looks pretty fine for the most part. I spent a lot of time choosing colour schemes, page layout, font families, and more. My favourite page to make was the WORK tab, where I was proud of coming up with that layout. The WORK tab was actually redesigned into what it is now because over time I realized how ugly it looked in its early stages. Oh yeah, responsive design is also implemented so you can view this on your phone without it becoming a total mess. Anyway, this project was a fun learning experience. \n\nEverybody wanted to know what I would do if I didn't [finish this website].\nI guess we'll never know."
     },
     {
-        "title": "BLOG 3",
+        "title": "A real life example",
         "cover": "images/OMORI_3.png",
-        "date" : "March 16 2005",
-        "synopsis": "someone special",
-        "article": "{<http://localhost:3000/notes>, special}"
+        "date" : "June 9, 2024",
+        "synopsis": "backstory on competitive programming and how it helped play a role in creating the NOTES tab",
+        "article": "I remember back in Gr. 9 where my friend <https://github.com/AndyLiang222|Andy Liang> and I registered for the mock CCC (Canadian Computing Competition) at our highschool. We did well in the junior contest and won a $10 tim hortons gift-card 💰. I found programming problems to be fun puzzles that really test your creativity in problem solving. \n\nPython was my first language which I used to run through a bunch of junior problems, brute forcing most of them without regard to technique. As my career progressed, I realized I wouldn't be able to get away with this, so I started to learn theory that would greatly improve my time complexity and efficiency. Over this course of learning, my favourite topic in competitive programming so far is Graph Theory, where I one-trick BFS problems such as the following: {<https://dmoj.ca/problem/dwite08c4p4|dwite08c4p4>,<https://dmoj.ca/problem/wossoly21s3|wossoly21s3>,<https://dmoj.ca/problem/ccc18s3|ccc18s3>}Anyway, onto how all this helped me make this page. See what you are reading right now? There are links and lists on this paper, but I never hardcoded these in. This content generation is all from a string that has special characters to indicate the start of a link or list. My approach was to use two-pointer to find these trigger characters and parse the string appropriately. \n\nYou can view this O(N) implementation on <https://github.com/orion222/portfoliov2/blob/master/src/components/general/parseText.js|this file>. "
     },
     {
         "title": "BLOG 4",
         "cover": "images/OMORI_4.png",
         "date" : "Decemeber 16 2005",
-        "synopsis": "RAAAAAAAAAAAAHHH"
-    },
-    {
-        "title": "BLOG 4",
-        "cover": "images/OMORI_4.png",
-        "date" : "Decemeber 16 2005",
-        "synopsis": "someone"
-    },
-    {
-        "title": "BLOG 4",
-        "cover": "images/OMORI_4.png",
-        "date" : "Decemeber 16 2005",
-        "synopsis": "someone"
-    },
-    {
-        "title": "BLOG 4",
-        "cover": "images/OMORI_4.png",
-        "date" : "Decemeber 16 2005",
-        "synopsis": "someone"
+        "synopsis": "RAAAAAAAAAAAAHHH",
+        "article": "yup"
     }
 ]

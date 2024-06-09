@@ -2,24 +2,22 @@ import "../../styles/Paper.css";
 let funcs = [getLink, getList];
 let triggers = [["<", ">"], ["{", "}"]];
 
-
-export default function parseArticle(article) {
+let l;
+let r;
+export default function parseText(article) {
+  l = 0;
+  r = 0;
   let out = [];
-  let l = 0;
-  let r = 0;
   while (r < article.length) {
     let c = article.charAt(r);
     for (let i = 0; i < triggers.length; i++) {
       if (c === triggers[i][0]) {
         out.push(article.substring(l, r));
-        out.push(funcs[i](article, r + 1));
-
-        while (c !== triggers[i][1]) {
-          r++;
-          c = article.charAt(r);
-        }
-        l = r + 1;
+        r++;
+        l = r;
+        out.push(funcs[i](article));
       }
+      
     }
     r++;
   }
@@ -44,20 +42,19 @@ export default function parseArticle(article) {
  * @param {int} idx 
  * @returns <a href = "https://link.com"> {shortName} </a>
  */
-function getLink(article, idx){
-    let l = idx;
-    let r = idx;
+function getLink(article){
     let link = null;
-    for (r = idx; r < article.length; r++){
-        let c = article.charAt(r);
+    for (r = r; r < article.length; r++){
+        let c = article.charAt(r); 
         if (c === '|'){
             link = article.substring(l, r);
             l = r + 1;
         }
         else if (c === '>'){
           let t = article.substring(l, r);
+          l = r + 1;
           return (
-              <a target="_blank" href={(link === null) ? t: link} className="article-link">
+              <a key = {r} target="_BLANK" href={(link === null) ? t: link} className="article-link">
                 {t}
               </a>
           );
@@ -78,32 +75,29 @@ function getLink(article, idx){
  * @param {int} idx 
  * @returns <ul> <li/> ... <li/> <ul>
  */
-function getList(article, idx) {
-  let l = idx;
-  let r = idx;
+function getList(article) {
   let items = [];
-  for (r = idx; r < article.length; r++) {
+  let link = null;
+  for (r = r; r < article.length; r++) {
     let c = article.charAt(r);
     if (c === "<") {
-        items.push(
-          <li key={r}>
-            {getLink(article, r + 1)}
-          </li>
-        );
-        while (c != ","){
-          r++;
-          c = article.charAt(r);
-        }
         r++;
         l = r;
+        link = getLink(article, r);
     } 
-    else if (c === ","){
-      items.push(<li key={r}> {article.substring(l, r)} </li>);
+    else if (c === "," || c === '}'){
+      if (link == null) items.push(<li key={r}> {article.substring(l, r)} </li>);
+      else {
+        items.push(
+          <li key={r}>
+            {link}
+          </li>
+        );
+        link = null;
+      }
       l = r + 1;
-    }
-    else if (c === "}") {
-      items.push(<li key={r}> {article.substring(l, r)} </li>);
-      return <ul className="article-list"> {items} </ul>;
+
+      if (c === '}') return <ul key = {r} className="article-list"> {items} </ul>;
     }
   }
   console.error("Could not find closing bracket }");

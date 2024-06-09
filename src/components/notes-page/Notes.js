@@ -9,7 +9,7 @@ function TextPanel() {
   return (
     <div className="text-panel">
       <div className="gazette">
-        THE <br /> ORION <br /> GAZETTE
+        THE <br /> GAZETTE
       </div>
       <div className="gazette-p2">
         Hold shift and scroll or drag the slider. <br/>Click a cover to read what it's about
@@ -23,7 +23,7 @@ function noteOverview(id) {
   return (
     <div className="overview-container">
       <div className="note-grid">
-        <h1 className="note-title grid-content note-id"> #{id < 10 ? "0" + id : id}</h1>
+        <h1 className="note-title note-id"> #{id < 10 ? "0" + id : id}</h1>
         <h1 className = "note-title">{NOTES[id].title} </h1>
         <span className = "titleandid"> #{id < 10 ? "0" + id : id} {NOTES[id].title} </span>
         <h2>SYNOPSIS</h2>
