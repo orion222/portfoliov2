@@ -1,17 +1,8 @@
 import "../../styles/Landing.css";
 import orion from "../../images/orionwithtcard.jpeg"
 
-
-import { useState } from 'react'
-
 export default function Landing() {
-  const links = ["WORK", "NOTES", "OTHER"]
-  const [page, setPage] = useState(0);
-  
-  function handleClick(){
-    setPage((page + 1) % 3);
-  }
-
+  const links = ["WORK", "NOTES", "OTHER"]  
   function displayLinks(){
     let ret = []
     for (let i = 0; i < links.length; i++){
@@ -33,7 +24,7 @@ export default function Landing() {
           <div className="subtitle">UOFT Computer Science</div>
 
           <div className="hero">
-            <img src = {orion} className="card-image"/>
+            <img alt = "orion" src = {orion} className="card-image"/>
             <div className="my-links">
               <div className="link">
                 <a

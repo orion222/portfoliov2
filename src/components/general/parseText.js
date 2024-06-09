@@ -1,6 +1,8 @@
 import "../../styles/Paper.css";
 let funcs = [getLink, getList];
 let triggers = [["<", ">"], ["{", "}"]];
+
+
 export default function parseArticle(article) {
   let out = [];
   let l = 0;
@@ -21,24 +23,44 @@ export default function parseArticle(article) {
     }
     r++;
   }
-  out.push(<div> {article.substring(l, r)} </div>);
+  out.push(article.substring(l, r));
   return out;
 }
 
+/**
+ * Takes a string that consists of 
+ * 
+ * <https://link.com>
+ * 
+ * OR 
+ * 
+ * <https://link.com|shortName>
+ * 
+ * If shortName is not specified, then the url-text 
+ * will just be the url itself. Otherwise the url-text will
+ * be shortName
+ *  
+ * @param {string} article 
+ * @param {int} idx 
+ * @returns <a href = "https://link.com"> {shortName} </a>
+ */
 function getLink(article, idx){
     let l = idx;
     let r = idx;
+    let link = null;
     for (r = idx; r < article.length; r++){
         let c = article.charAt(r);
-        if (c === '>'){
-            let link = article.substring(l, r);
-            return (
-              <span>
-                <a target="_blank" href={link} className="article-link">
-                {link}
-                </a>
-              </span>
-            );
+        if (c === '|'){
+            link = article.substring(l, r);
+            l = r + 1;
+        }
+        else if (c === '>'){
+          let t = article.substring(l, r);
+          return (
+              <a target="_blank" href={(link === null) ? t: link} className="article-link">
+                {t}
+              </a>
+          );
         }
     }
 
@@ -46,28 +68,40 @@ function getLink(article, idx){
     return null;
 }
 
+/**
+ * Takes a string that consists of {a, b, c, d}
+ * 
+ * Where each element will be formatted into an unordered list
+ * Elements can be text or links specified in the above method
+ * 
+ * @param {string} article 
+ * @param {int} idx 
+ * @returns <ul> <li/> ... <li/> <ul>
+ */
 function getList(article, idx) {
   let l = idx;
   let r = idx;
   let items = [];
   for (r = idx; r < article.length; r++) {
     let c = article.charAt(r);
-    if (c === ">" || c === ",") {
-      if (c === ">") {
-        let link = article.substring(l + 1, r);
+    if (c === "<") {
         items.push(
           <li key={r}>
-            <a target="_blank" href={link} className="article-link">
-              {link}
-            </a>
+            {getLink(article, r + 1)}
           </li>
         );
+        while (c != ","){
+          r++;
+          c = article.charAt(r);
+        }
         r++;
-      } else {
-        items.push(<li key={r}> {article.substring(l, r)} </li>);
-      }
+        l = r;
+    } 
+    else if (c === ","){
+      items.push(<li key={r}> {article.substring(l, r)} </li>);
       l = r + 1;
-    } else if (c === "}") {
+    }
+    else if (c === "}") {
       items.push(<li key={r}> {article.substring(l, r)} </li>);
       return <ul className="article-list"> {items} </ul>;
     }

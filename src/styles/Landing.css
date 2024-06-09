@@ -6,7 +6,7 @@ a { color:white } /* Globally */
 
 a:visited { text-decoration: none; }
 a:focus { text-decoration: none;  }
-i:hover, i.active { text-decoration: none; color: var(--jade) }
+i:hover, i.active { text-decoration: none; color: white }
 
 :root{
     /* #A4AC86 */
@@ -87,6 +87,7 @@ i:hover, i.active { text-decoration: none; color: var(--jade) }
 }
 i {
     font-size: 6vmin;
+    color: var(--jade);
 }
 
 .my-links{

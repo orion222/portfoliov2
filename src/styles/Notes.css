@@ -80,6 +80,7 @@
 .article{
     grid-column-start: 2;
     white-space: pre-wrap;
+    word-break: break-word;
 }
 
 h2{
@@ -90,7 +91,9 @@ h2{
     display: none;
 }
 @media screen and (max-width: 750px){
-    
+    .titleandid{
+        font-size: 10vmin;
+    }
     .note-grid{
         width: 100%;
         grid-template-columns: 100%;
@@ -111,7 +114,7 @@ h2{
     }
     .titleandid{
         display: inline-block;
-        font-size: 4vw;
+        font-size: 6vmin;
         font-weight: 400;
         font-family: "Alfa Slab One", sans-serif;
         overflow-wrap: break-word;
