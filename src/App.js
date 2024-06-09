@@ -19,7 +19,7 @@ function App() {
         <Route path = "/other/chess" element = {<Chess/>}/>
         <Route path = "/notes" element = {<Notes/>}/>
         <Route path = "/ashikka" element = {<Ash/>}/>
-        <Route path = "*" element = {<NotFound/>}/>
+        <Route path = "/*" element = {<NotFound/>}/>
       </Routes>
     </BrowserRouter>
 
