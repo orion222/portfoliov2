@@ -116,6 +116,7 @@ i {
 .centered-column{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -176,6 +177,12 @@ i {
                                     supported by Chrome, Edge, Opera and Firefox */
   }
 
+@media screen and (min-width: 1500px){
+    .card-image{
+        max-width: 400px;
+        max-height: 500px;
+    }
+}
 @media screen and (max-width: 1000px){
     .container{
         min-height: 100vh;
