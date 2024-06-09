@@ -39,7 +39,6 @@ export default function parseText(article) {
  * be shortName
  *  
  * @param {string} article 
- * @param {int} idx 
  * @returns <a href = "https://link.com"> {shortName} </a>
  */
 function getLink(article){
@@ -54,7 +53,7 @@ function getLink(article){
           let t = article.substring(l, r);
           l = r + 1;
           return (
-              <a key = {r} target="_BLANK" href={(link === null) ? t: link} className="article-link">
+              <a key = {r} target="_BLANK" rel = "noreferrer" href={(link === null) ? t: link} className="article-link">
                 {t}
               </a>
           );
@@ -72,7 +71,6 @@ function getLink(article){
  * Elements can be text or links specified in the above method
  * 
  * @param {string} article 
- * @param {int} idx 
  * @returns <ul> <li/> ... <li/> <ul>
  */
 function getList(article) {

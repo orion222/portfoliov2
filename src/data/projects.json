@@ -15,6 +15,18 @@
     "links": "https://github.com/Coders222/omori---ics4u"
   },
   {
+    "name": "Bookshelf",
+    "slides": [
+      "https://picsum.photos/seed/1/600/400",
+      "https://picsum.photos/seed/2/600/400",
+      "https://picsum.photos/seed/3/600/400",
+      "https://picsum.photos/seed/4/600/400"
+    ],
+    "time": "2023",
+    "tech": "React HTML CSS ",
+    "overview": ""
+  },
+  {
     "name": "UNDERTALE",
     "slides": [
       "images/UNDERTALE_1.png",
@@ -37,82 +49,9 @@
       "https://picsum.photos/seed/4/600/400"
     ],
     "time": "2021",
-    "tech": "Python"
+    "tech": "Python",
+    "overview": ""
 
-  },
-  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },
-  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },
-  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
-  },
-  {
-    "name": "Bookshelf",
-    "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
-    ],
-    "time": "n/a",
-    "tech": "java"
   }
 ]
   

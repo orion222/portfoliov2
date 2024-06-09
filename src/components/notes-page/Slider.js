@@ -13,7 +13,7 @@ export default function Slider(props) {
               key = {idx}
             >
               <div className="blog-title"> {val.title} </div>
-              <img src={val.cover} alt={`blog ${idx}`} key={idx} />
+              <img src={`noteCovers/${val.cover}`} alt={`blog ${idx}`} key={idx} />
             </div>
           );
         })}
