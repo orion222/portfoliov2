@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
 .work-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -14,11 +15,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: appear-up 3s;
 }
 
-.cuphead{
+.cuphead-walk{
     height: 200px;
     width: 400px;
+}
+.cuphead{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    cursor: pointer;
+}
+.cuphead:hover{
+    opacity: 0.5;
 }
 
 .work-title{
@@ -27,11 +40,13 @@
     font-style: normal;
     font-size: 15vmin;
     color: yellow;
+
 }
 
 .work-subtitle{
     color: white;
     font-size: 3vmin;
+
 }
 .project{
     border: solid;
@@ -51,7 +66,27 @@
     border-color: black;
 }
 
-.page{
-    overflow-y: scroll;
-    width: 75%;
+
+@media screen and (max-width: 1000px){
+    .work-wrapper{
+        min-height: 100vh;
+        display: flex;
+        background-color: var(--background);
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .work-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 1rem;
+        padding: 1rem 0;
+        height: unset;
+        min-height: 100%;
+    }
+    .cuphead{
+        position: relative;
+        left: unset;
+    }
 }

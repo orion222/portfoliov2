@@ -6,6 +6,7 @@
     width: 400px;
     height: 250px;
     user-select: none;
+    padding: 0 0;
 }
 
 .slide{
@@ -62,4 +63,15 @@
 
 .indicator-inactive{
     background-color: #808080;
+}
+
+@media screen and (max-width: 600px){
+    .carousel{
+        width: 80%;
+        height: 50%;
+    }
+    .slide-arrow {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 }

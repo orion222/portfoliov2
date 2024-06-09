@@ -3,7 +3,7 @@ import Slider from "./Slider";
 import { useState, useMemo } from "react";
 import NOTES from "../../data/notes.json";
 import Back from "../general/BackButton";
-import parseArticle from "./parseArticle.js"
+import parseText from "../general/parseText.js"
 
 function TextPanel() {
   return (
@@ -12,7 +12,7 @@ function TextPanel() {
         THE <br /> ORION <br /> GAZETTE
       </div>
       <div className="gazette-p2">
-        Scroll through and click a cover to read what it's about
+        Hold shift and scroll or drag the slider. <br/>Click a cover to read what it's about
       </div>
     </div>
   );
@@ -31,7 +31,7 @@ function noteOverview(id) {
         <h2>DATE</h2>
         <p className="grid-content">{NOTES[id].date}</p>
         <h2>PAPER</h2>
-        <div className="article grid-content">{parseArticle(NOTES[id].article)}</div>
+        <div className="article grid-content">{parseText(NOTES[id].article)}</div>
       </div>
     </div>
   );

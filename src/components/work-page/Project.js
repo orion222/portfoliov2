@@ -1,6 +1,8 @@
 import "../../styles/Project.css";
 import { Carousel } from "../general/Carousel.js"
+import parseText from "../general/parseText.js"
 export default function Project(props){
+    console.log(props.data.name + " loaded");
     return <div className = "project-container">
         <section>
             <div className="header-label">PROJECT: {props.data.name}</div>
@@ -8,13 +10,13 @@ export default function Project(props){
             <div className="header-label">TECHNOLOGY: {props.data.tech}</div>
         </section>
         <section className = "gallery">
-            <Carousel page = {props.page} slides = {props.data.slides}/>
+            <Carousel slides = {props.data.slides}/>
         </section>
         
         <section>
             <div className="header-label">OVERVIEW:</div>
             <br></br>
-            {props.data.overview}
+            {parseText(props.data.overview)}
         </section>
 
         <section>

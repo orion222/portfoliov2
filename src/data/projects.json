@@ -24,7 +24,8 @@
       "images/UNDERTALE_5.png"
     ],
     "time": "2022",
-    "tech": "Java 8, AWT Graphics"
+    "tech": "Java 8, AWT Graphics",
+    "overview": "A budget remake of the popular RPG game OMORI made by Orion Chen and Nicky Lam. This game is a 2D adventure game where you must explore your surroundings to proceed in the story. You will be controlling a character who is named SUNNY located in WHITESPACE and need to find a way to start the game. Once you begin the game, you are now a delusion of SUNNY named OMORI. Hover the lightbulb in the main menu for an easter egg. \n\nDedicated to Ms. Wong."
 
   },
   {

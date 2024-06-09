@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Carousel.css"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
-export const Carousel = ({ slides, page }) => {
+export const Carousel = ({ slides }) => {
     const [slide, setSlide] = useState(0);
+    console.log(slide);
     useEffect(() => {
         setSlide(0);
-        return () => {
-            setSlide(0);
-    }}, [page]);
+    }, [slides]);
     function displaySlides(){
         let arr = []
         for (let i = 0; i < slides.length; i++){

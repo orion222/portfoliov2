@@ -1,5 +1,6 @@
 import { IoCaretBack } from "react-icons/io5";
 import { useState } from 'react'
+import { CgEnter } from "react-icons/cg";
 export default function BackButton(props){
     const [hover, setHover] = useState(false)
     return <a href = {props.url}>
@@ -13,16 +14,16 @@ const buttonStyles = {
     width: "2rem",
     height: "2rem",
     color: "#ced4da",
-    padding: "0 0"
 }
 const box = {
     position: "absolute",
-    left: "1rem",
-    top: "1rem",
+    left: "0",
+    top: "0",
     color: "#ced4da",
     display: "flex",
+    alignItems: "center"
 }
 const font = {
-    fontSize: "2vw",
+    fontSize: "4vmin",
     fontFamily: "Monospace"
 }

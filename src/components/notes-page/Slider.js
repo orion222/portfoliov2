@@ -2,7 +2,7 @@ import "../../styles/Slider.css";
 export default function Slider(props) {
   const NOTES = props.NOTES;
   return (
-    <div className="slider-container">
+    <div className="slider-container" >
       <div className="slider-list">
         {NOTES.map((val, idx) => {
           return (

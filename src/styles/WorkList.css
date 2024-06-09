@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 .work-scroll{
-    height: 80vh;
+    height: 80%;
     width: 40vw;
     overflow-y: scroll;
     margin-left: auto;
     margin-right: 1rem;
     padding: 0 1rem 0 0;
+    animation: appear-up 3s;
+    background-color: var(--background);
 }
 .project-box{
     padding: 1rem 1rem;
@@ -17,7 +19,7 @@
     overflow:hidden;
     text-overflow: ellipsis;
     font-weight: 400;
-    font-size:8vmin;
+    font-size: 9vmin;
     color: white;
 }
 
@@ -69,4 +71,18 @@
 }
 ::-webkit-scrollbar-thumb:vertical:active{
     cursor: grabbing;
+}
+
+@media screen and (max-width: 1500px){
+    .project-name {
+        font-size: 7vmin;
+    }
+}
+@media screen and (max-width: 1000px){
+    .work-scroll{
+        margin-left: unset;
+        height: auto;
+        overflow: unset;
+        width: 100%;
+    }
 }
