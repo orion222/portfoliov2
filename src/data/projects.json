@@ -12,7 +12,7 @@
     "time": "2023",
     "tech": "Java 8 AWT Graphics",
     "overview": "A remake of the popular RPG game OMORI made by Orion Chen and Nicky Lam. This game is a 2D adventure game where you must explore your surroundings to proceed in the story. You will be controlling a character who is named SUNNY located in WHITESPACE and need to find a way to start the game. Once you begin the game, you are now a delusion of SUNNY named OMORI. Hover the lightbulb in the main menu for an easter egg. \n\nDedicated to Ms. Wong.",
-    "links": "https://github.com/Coders222/omori---ics4u"
+    "links": "<https://github.com/Coders222/omori---ics4u>"
   },
   {
     "name": "Bookshelf",
@@ -24,7 +24,7 @@
     "time": "2023",
     "tech": "React Tailwind HTML CSS ",
     "overview": "A hackathon project that simply queries a search for a book from the <https://openlibrary.org/|Open Library API> and allows you to add it to a reading list. Original idea was to allow users to share their reading lists by making accounts, but got cut short when <https://github.com/andyliang222|Andy Liang> gave up. Perhaps I'll finish it for him in the future.",
-    "links": "{<https://github.com/Coders222/bookshelf-frontend|Bookshelf-frontend>,<https://github.com/Coders222/Bookshelf_Backend|Bookshelf-backend>}" 
+    "links": "{<https://github.com/Coders222/bookshelf-frontend>,<https://github.com/Coders222/Bookshelf_Backend>}" 
   },
   {
     "name": "UNDERTALE",
@@ -37,20 +37,20 @@
     ],
     "time": "2022",
     "tech": "Java 8 AWT Graphics",
-    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and Nicky Lam. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow"
+    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and Nicky Lam. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow",
+    "links": "<https://github.com/orion222/undertale---ics3u>"
   },
   {
     "name": "Stacker",
     "slides": [
-      "https://picsum.photos/seed/1/600/400",
-      "https://picsum.photos/seed/2/600/400",
-      "https://picsum.photos/seed/3/600/400",
-      "https://picsum.photos/seed/4/600/400"
+      "STACKER_1.png",
+      "STACKER_2.jpg",
+      "STACKER_3.jpg"
     ],
     "time": "2021",
     "tech": "Python ",
-    "overview": "",
-    "link": ""
+    "overview": "The first ever game that I made: Stacker, the classic game you see at any arcade. In collaboration with Jacky Men, this game offers two modes which are classic and endless. In the endless mode, you have the ability to use powerups which include doubling score, slowing down the next block, and growing piece you need to stack by one. The full rules are in the RULES tab on the home page. There also is a text file that tracks and displays the local highscore. There's an easter egg in the About section. \n\nDedicated to Ms. Wong",
+    "links": "<https://github.com/orion222/ICS2U-Stacker/tree/main>"
 
   }
 ]
