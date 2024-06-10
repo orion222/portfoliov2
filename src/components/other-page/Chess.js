@@ -17,7 +17,7 @@ export default function Chess(){
 
     return (
         <div className = "main">
-            <Back url = "/Other"/>
+            <Back url = "/portfoliov2/Other"/>
             <div className = "large-screen">
                 <h1 className = "chess-header">Brilliancies 👽</h1>
                 <div className = "board">

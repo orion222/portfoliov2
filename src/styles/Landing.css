@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 
-a { color:white } /* Globally */
-
 a:visited { text-decoration: none; }
 a:focus { text-decoration: none;  }
+a:active {text-decoration:none;}
 i:hover, i.active { text-decoration: none; color: white }
 
 :root{

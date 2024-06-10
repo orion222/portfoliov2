@@ -25,7 +25,7 @@ export default function Work() {
   };
   return (
     <div className = "work-wrapper">
-      {(proj === -1) && <Back url = "/" class = "blurred-fast"/>}
+      {(proj === -1) && <Back class = "blurred-fast"/>}
       <div className="work-container">
         {(proj > -1) && 
         <img alt="back" className="cuphead" src={cuphead} onClick={() => setProj(-1)}/>}

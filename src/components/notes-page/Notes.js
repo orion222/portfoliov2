@@ -43,7 +43,7 @@ export default function Notes() {
   
   return (
     <div className="notes-container">
-      <Back url="." />
+      <Back/>
       <Slider NOTES={NOTES} setNote={setNote} curNote={note} />
       {note === -1 ? TextPanel() : noteOverview(note)}
     </div>

@@ -21,8 +21,7 @@ export default function Project(props){
 
         <section>
             <div className="header-label">LINKS:</div>
-            <br></br>
-            <a target = "_blank"  rel="noreferrer" href = {props.data.links}>Github</a>
+            {parseText(props.data.links)}
         </section>
     </div>
 }

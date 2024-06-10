@@ -18,7 +18,7 @@
 }
 
 
-section{
+.project-container section{
     white-space: pre-wrap;
     word-wrap: break-word;
     padding: 10px 2rem;
@@ -26,6 +26,11 @@ section{
     font-size: 0.8rem;
     color: white;
 }
+
+.project-container a{
+    color: white;
+}
+
 
 
 .gallery{
