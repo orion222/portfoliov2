@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/Carousel.css"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
-export const Carousel = ({ slides }) => {
+export const Carousel = ({ prefix, slides }) => {
     const [slide, setSlide] = useState(0);
-    console.log(slide);
     useEffect(() => {
         setSlide(0);
     }, [slides]);
     function displaySlides(){
         let arr = []
         for (let i = 0; i < slides.length; i++){
-            arr.push(<img src = {slides[i]} alt = "" key = {i} className = {(slide === i) ? "slide": "slide slide-hidden"}></img>);
+            arr.push(<img src = {prefix + slides[i]} alt = "" key = {i} className = {(slide === i) ? "slide": "slide slide-hidden"}></img>);
         }
         return arr;
     }

@@ -13,12 +13,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element = {<Landing/>}/> 
-        <Route exact path = "/work" element = {<Work/>}/>
-        <Route exact path = "/other" element ={<Other/>}/>
-        <Route exact path = "/other/chess" element = {<Chess/>}/>
-        <Route exact path = "/notes" element = {<Notes/>}/>
-        <Route exact path = "/ashikka" element = {<Ash/>}/>      
+        <Route path="/" element = {<Landing/>}/> 
+        <Route path = "/work" element = {<Work/>}/>
+        <Route path = "/other" element ={<Other/>}/>
+        <Route path = "/other/chess" element = {<Chess/>}/>
+        <Route path = "/notes" element = {<Notes/>}/>
+        <Route path = "/ashikka" element = {<Ash/>}/>      
+        <Route path = "*" element = {<NotFound/>}/>
       </Routes>
     </BrowserRouter>
 

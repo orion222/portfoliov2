@@ -15,7 +15,7 @@ export default function Work() {
       return (
         <div className="work-hero">
           <div className="work-title">WORK</div>
-          <img className="cuphead-walk" src={cupheadWalk}></img>
+          <img alt = "cuphead-walk" className="cuphead-walk" src={cupheadWalk}></img>
           <div className="work-subtitle">
             Scroll through and click to view a project
           </div>
@@ -28,7 +28,7 @@ export default function Work() {
       {(proj === -1) && <Back url = "/" class = "blurred-fast"/>}
       <div className="work-container">
         {(proj > -1) && 
-        <img className="cuphead" src={cuphead} onClick={() => setProj(-1)}/>}
+        <img alt="back" className="cuphead" src={cuphead} onClick={() => setProj(-1)}/>}
         {displayProj(proj)}
         <WorkList proj={proj} setProj={setProj} />
       </div>

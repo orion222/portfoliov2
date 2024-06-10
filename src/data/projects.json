@@ -2,12 +2,12 @@
   {
     "name": "OMORI",
     "slides": [
-      "images/OMORI_1.png",
-      "images/OMORI_2.png",
-      "images/OMORI_3.png",
-      "images/OMORI_4.png",
-      "images/OMORI_5.png",
-      "images/OMORI_6.png"
+      "OMORI_1.png",
+      "OMORI_2.png",
+      "OMORI_3.png",
+      "OMORI_4.png",
+      "OMORI_5.png",
+      "OMORI_6.png"
     ],
     "time": "2023",
     "tech": "Java 8, AWT Graphics",
@@ -29,11 +29,11 @@
   {
     "name": "UNDERTALE",
     "slides": [
-      "images/UNDERTALE_1.png",
-      "images/UNDERTALE_2.png",
-      "images/UNDERTALE_3.png",
-      "images/UNDERTALE_4.png",
-      "images/UNDERTALE_5.png"
+      "UNDERTALE_1.png",
+      "UNDERTALE_2.png",
+      "UNDERTALE_3.png",
+      "UNDERTALE_4.png",
+      "UNDERTALE_5.png"
     ],
     "time": "2022",
     "tech": "Java 8, AWT Graphics",

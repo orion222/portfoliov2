@@ -1,6 +1,6 @@
 import "../../styles/Notes.css";
 import Slider from "./Slider";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import NOTES from "../../data/notes.json";
 import Back from "../general/BackButton";
 import parseText from "../general/parseText.js"

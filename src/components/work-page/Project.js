@@ -10,7 +10,7 @@ export default function Project(props){
             <div className="header-label">TECHNOLOGY: {props.data.tech}</div>
         </section>
         <section className = "gallery">
-            <Carousel slides = {props.data.slides}/>
+            <Carousel prefix = "images/projects/" slides = {props.data.slides}/>
         </section>
         
         <section>
@@ -22,7 +22,7 @@ export default function Project(props){
         <section>
             <div className="header-label">LINKS:</div>
             <br></br>
-            <a target = "_blank" href = {props.data.links}>Github</a>
+            <a target = "_blank"  rel="noreferrer" href = {props.data.links}>Github</a>
         </section>
     </div>
 }

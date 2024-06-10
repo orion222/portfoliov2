@@ -43,7 +43,7 @@ export default function parseText(article) {
  */
 function getLink(article){
     let link = null;
-    for (r = r; r < article.length; r++){
+    for (r; r < article.length; r++){
         let c = article.charAt(r); 
         if (c === '|'){
             link = article.substring(l, r);
@@ -76,7 +76,7 @@ function getLink(article){
 function getList(article) {
   let items = [];
   let link = null;
-  for (r = r; r < article.length; r++) {
+  for (r; r < article.length; r++) {
     let c = article.charAt(r);
     if (c === "<") {
         r++;
