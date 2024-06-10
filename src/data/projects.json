@@ -19,7 +19,8 @@
     "slides": [
       "BOOKSHELF_1.png",
       "BOOKSHELF_2.png",
-      "BOOKSHELF_3.png"
+      "BOOKSHELF_3.png",
+      "BOOKSHELF_4.png"
     ],
     "time": "2023",
     "tech": "React Tailwind HTML CSS ",
@@ -37,7 +38,8 @@
     ],
     "time": "2022",
     "tech": "Java 8 AWT Graphics",
-    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and Nicky Lam. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow"
+    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and Nicky Lam. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow",
+    "links": ""
   },
   {
     "name": "Stacker",
@@ -50,7 +52,7 @@
     "time": "2021",
     "tech": "Python ",
     "overview": "",
-    "link": ""
+    "links": ""
 
   }
 ]
