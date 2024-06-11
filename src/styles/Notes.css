@@ -8,7 +8,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #fcefb4;
     -webkit-animation: backgroundTransition 3s;
     animation: backgroundTransition 3s;
 }
@@ -16,7 +16,7 @@
 @keyframes backgroundTransition {
     0% {background-color: #26211D}
     20% {background-color: #26211D}
-    100% {background-color: white}
+    100% {background-color: #fcefb4}
 }
 
 
@@ -61,6 +61,7 @@
     grid-template-columns: 20% 80%;
     gap:2rem 0;
     padding: 0 1rem;
+    padding-bottom: 2rem;
     font-family: IBM Plex Sans, sans-serif;
     font-weight: 400;
 }
