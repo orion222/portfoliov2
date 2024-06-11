@@ -3,7 +3,6 @@
 .project-container{
     height: 90%;
     overflow-y: scroll;
-    overflow-x: hidden;
     border: 1px solid white;
     background-color: var(--background);
 }
@@ -39,9 +38,20 @@
     padding: 2rem 0;
 }
 
-.project-container ::-webkit-scrollbar{
-    width: 0rem;
+.project-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+.project-container::-webkit-scrollbar-thumb {
+    background: #e1e8f2; 
+    border-radius: 10px;
 }
+.project-container::-webkit-scrollbar{
+    scrollbar-width: thin;
+    width: 0.25rem;
+    position: relative;
+}
+
 
 @media screen and (max-width: 1000px){
     .project-container{
@@ -53,5 +63,11 @@
 @media screen and (min-width: 1500px){
     .project-container section {
         font-size: 2vmin;
+    }
+}
+
+@media screen and (max-width: 430px){
+    * {
+        padding: 0 !important;
     }
 }
