@@ -49,3 +49,9 @@
         overflow: unset;
     }
 }
+
+@media screen and (min-width: 1500px){
+    .project-container section {
+        font-size: 2vmin;
+    }
+}
