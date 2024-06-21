@@ -56,7 +56,7 @@
 @media screen and (max-width: 1000px){
     .project-container{
         height: auto;
-        overflow: unset;
+        overflow: unset; 
     }
 }
 
