@@ -1,7 +1,6 @@
 import "../../styles/Paper.css";
-let funcs = [getLink, getList];
-let triggers = [["<", ">"], ["{", "}"]];
-
+let funcs = [getLink, getList, getRawText, getBoldText];
+let triggers = [["<", ">"], ["{", "}"], ["[", "]"], ["*", "*"]];
 let l;
 let r;
 export default function parseText(article) {
@@ -19,6 +18,7 @@ export default function parseText(article) {
       }
       
     }
+    
     r++;
   }
   out.push(article.substring(l, r));
@@ -99,5 +99,47 @@ function getList(article) {
     }
   }
   console.error("Could not find closing bracket }");
+  return null;
+}
+
+/**
+ * Takes a string that has trigger characters.
+ * 
+ * Outputs the string as it is, without going through any of the functions
+ * that are usually triggered by the trigger characters.
+ * 
+ * @param {string} article
+ * @return <span> text <span>
+ */
+function getRawText(article){
+  for (r; r < article.length; r++){
+    if (article.charAt(r) == ']'){
+      let ret = article.substring(l, r);
+      l = r + 1;
+      return <span>{ret}</span>
+    }
+  }
+
+  console.error("Could not find closing bracket ]");
+  return null;
+}
+
+/**
+ * Takes a string surrounded by *
+ * 
+ * Bolds the plain text which is surrounded by *
+ * 
+ * @param {string} article
+ * @return <strong> text <strong>
+ */
+function getBoldText(article){
+  for (r; r < article.length; r++){
+    if (article.charAt(r) == '*'){
+      let ret = article.substring(l, r);
+      l = r + 1;
+      return <strong> <span>{ret}</span> </strong>
+    }
+  }
+  console.error("Could not find closing character *");
   return null;
 }
