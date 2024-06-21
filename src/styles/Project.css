@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width: 430px){
-    * {
-        padding: 0 !important;
+    .project-container section{
+        padding: 10px 5px !important;
     }
 }
