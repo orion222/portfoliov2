@@ -11,7 +11,7 @@
     ],
     "time": "2023",
     "tech": "Java 8 AWT Graphics",
-    "overview": "A remake of the popular RPG game OMORI made by Orion Chen and Nicky Lam. This game is a 2D adventure game where you must explore your surroundings to proceed in the story. You will be controlling a character who is named SUNNY located in WHITESPACE and need to find a way to start the game. Once you begin the game, you are now a delusion of SUNNY named OMORI. Hover the lightbulb in the main menu for an easter egg. \n\nDedicated to Ms. Wong.",
+    "overview": "A remake of the popular RPG game OMORI made by Orion Chen and <https://github.com/niiicky|Nicky Lam>. This game is a 2D adventure game where you must explore your surroundings to proceed in the story. You will be controlling a character who is named SUNNY located in WHITESPACE and need to find a way to start the game. Once you begin the game, you are now a delusion of SUNNY named OMORI. Hover the lightbulb in the main menu for an easter egg. \n\nDedicated to Ms. Wong.",
     "links": "<https://github.com/Coders222/omori---ics4u>"
   },
   {
@@ -38,7 +38,7 @@
     ],
     "time": "2022",
     "tech": "Java 8 AWT Graphics",
-    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and Nicky Lam. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow",
+    "overview": "A budget remake of the popular RPG <https://undertale.com/|UNDERTALE> by Toby Fox made by Orion Chen and <https://github.com/niiicky|Nicky Lam>. In this game you can walk around and interact with certain spots to collect items. When you walk to the end, you will fight a boss fight that features 2 different attacks in the same UNDERTALE style. Do note that the animations such as walking are much more laggy since this was our first experience of making a sandbox game. Our next project OMORI is a much smoother implementation of these animations.\n\nDedicated to Mr. Chow",
     "links": "<https://github.com/orion222/undertale---ics3u>"
   },
   {
