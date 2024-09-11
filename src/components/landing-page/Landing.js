@@ -1,5 +1,5 @@
 import "../../styles/Landing.css";
-import orion from "../../images/orionwithtcard.jpeg"
+import orion from "../../images/orionportrait.jpg"
 
 export default function Landing() {
   const links = ["WORK", "NOTES", "OTHER"]  
