@@ -12,7 +12,7 @@
     "time": "2024",
     "tech": "Android SDK, Java, Firebase",
     "overview": "A database management android app proposed to the <https://www.taam.ca/|Toronto Asian Art Museum> to proper cataloguing of artifacts. Features include viewing, insertion, deletion, look-ups, printing, and more. Aside from the technology, this project was made with several software practices such as SCRUM for collaboration and Mockito for testing. <https://github.com/zsspan/|Zohair>, one of my group mates, made a much more detailed description of the project in his repo which is linked below.",
-    "links": "{<https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App>}"
+    "links": "<https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App>"
   },
   {
     "name": "Tetris",
@@ -24,7 +24,7 @@
     "time": "2024",
     "tech": "MIPS Assembly",
     "overview": "An implementation of the classic game Tetris developed with <https://github.com/andyliang222|Andy Liang>. As you can imagine, coding this in MIPS Assembly was challenging and frustrating to debug. Plus the fact that we had to collaborate on a SINGLE file since assembly does not support modules. Thank goodness for high-level programming languages, but it's nice to know your roots. You can use <https://courses.missouristate.edu/KenVollmar/MARS/index.htm|MARS> to run this program, make sure to read the comments at the top of tetris.asm for proper setup. ",
-    "links": "{<https://github.com/AndyLiang222/b58project>}"
+    "links": "<https://github.com/AndyLiang222/b58project>"
   },
   {
     "name": "OMORI",
