@@ -64,10 +64,6 @@
 }
 
 @media screen and (max-width: 600px){
-    .carousel{
-        width: 80vw;
-        height: 250px;
-    }
     .slide-arrow {
         height: 1.5rem;
         width: 1.5rem;
